@@ -2,23 +2,23 @@ import { BsFacebook, BsInstagram, BsLinkedin, BsYoutube } from 'react-icons/bs'
 import LazyImage from '../lazyImage';
 const Footer = () => {
   return (
-    <section className="bg-gradient-to-br from-[#0c0c0c] to-[#393939] flex flex-col max-w-screen over">
+    <section className="bg-gradient-to-br from-[#0c1f1d] to-[#144139] flex flex-col max-w-screen over">
 
       <section className="w-[85%] mx-auto flex flex-row flex-wrap md:flex-nowrap justify-center md:gap-x-10 py-6">
         <a href="https://www.promodevelopers.com/" target='_blank' className="h-full mx-auto w-1/2 md:w-1/5 px-4 order-2 md:order-1">
-          <LazyImage className="h-[130px] w-full object-contain hover:-translate-y-2 md:hover:border-t-4 border-themeColor transition-all duration-75" src="/logos/promodevelopers.gif"/>
+          <LazyImage className="h-[130px] w-full object-contain hover:-translate-y-2 md:hover:border-t-4 border-white transition-all duration-75" src="/logos/promodevelopers.gif"/>
         </a>
         <a href="https://www.promobrick.com/" target='_blank' className="h-full mx-auto w-1/2 md:w-1/5 px-4 order-3 md:order-2">
-          <LazyImage className="h-[130px] w-full object-contain hover:-translate-y-2 md:hover:border-t-4 border-themeColor transition-all duration-75" src="/logos/promobrick.gif"/>
+          <LazyImage className="h-[130px] w-full object-contain hover:-translate-y-2 md:hover:border-t-4 border-white transition-all duration-75" src="/logos/promobrick.gif"/>
         </a>
         <a href="https://www.promogroup.com.pk/" target='_blank' className="h-full mx-auto w-full md:w-1/5 px-4 order-1 md:order-3">
-          <LazyImage className="h-[80px] md:h-[160px] w-full object-contain hover:-translate-y-2 md:hover:border-t-4 border-themeColor transition-all duration-75" src="/logos/promogroup.gif"/>
+          <LazyImage className="h-[80px] md:h-[160px] w-full object-contain hover:-translate-y-2 md:hover:border-t-4 border-white transition-all duration-75" src="/logos/promogroup.gif"/>
         </a>
         <a href="https://www.promogarlic.com/" target='_blank' className="h-full mx-auto w-1/2 md:w-1/5 px-4 order-4 md:order-4">
-          <LazyImage className="h-[130px] w-full object-contain hover:-translate-y-2 md:hover:border-t-4 border-themeColor transition-all duration-75" src="/logos/promogarlic.gif"/>
+          <LazyImage className="h-[130px] w-full object-contain hover:-translate-y-2 md:hover:border-t-4 border-white transition-all duration-75" src="/logos/promogarlic.gif"/>
         </a>
         <a href="https://www.promoland.com.pk/" target='_blank' className="h-full mx-auto w-1/2 md:w-1/5 px-4 order-5 md:order-5">
-          <LazyImage className="h-[130px] w-full object-contain hover:-translate-y-2 md:hover:border-t-4 border-themeColor transition-all duration-75" src="/logos/promofarms.gif"/>
+          <LazyImage className="h-[130px] w-full object-contain hover:-translate-y-2 md:hover:border-t-4 border-white transition-all duration-75" src="/logos/promofarms.gif"/>
         </a>
       </section>
       <section className="border-b-2 py-3 w-11/12 mx-auto text-white flex flex-col gap-2">
