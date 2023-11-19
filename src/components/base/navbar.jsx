@@ -35,11 +35,13 @@ const Navbar = () => {
               <ul className="p-2 z-30">
                 <li><Link href="/garlic-clove" className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Garlic Clove</Link></li>
                 <li><Link href="/garlic-bulb" className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Garlic Bulb</Link></li>
-                <li><Link href="/peeled-powder-paste" className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Peeled, Powder & Paste</Link></li>
+                <li><Link href="/garlic-peeled" className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Garlic Peeled</Link></li>
+                <li><Link href="/garlic-powder" className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Garlic Powder</Link></li>
+                <li><Link href="/garlic-paste" className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Garlic Paste</Link></li>
               </ul>
             </li>
             <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold"><Link href="/gallery">Gallery</Link></li>
-            <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold"><Link href="/about">About</Link></li>
+            {/* <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold"><Link href="/about">About</Link></li> */}
             <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold"><Lin to="contactus" spy={true} smooth={true} duration={500} >Contact Us</Lin></li>
             <li><a href="https://www.promodevelopers.com" target="blank" className="py-3 text-white flex items-center justify-center h-fit bg-themeColor rounded-3xl">Book Now</a></li>
           </ul>
@@ -57,12 +59,14 @@ const Navbar = () => {
               {dropdownOpen && (<ul className="p-2 z-30 min-w-max">
                 <li ><Link href="/garlic-clove" onClick={() => setDropdownOpen(false)} className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Garlic Clove</Link></li>
                 <li ><Link href="/garlic-bulb" onClick={() => setDropdownOpen(false)} className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Garlic Bulb</Link></li>
-                <li ><Link href="/peeled-powder-paste" onClick={() => setDropdownOpen(false)} className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Peeled, Powder & Paste</Link></li>
+                <li ><Link href="garlic-peeled" onClick={() => setDropdownOpen(false)} className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Garlic Peeled</Link></li>
+                <li ><Link href="garlic-powder" onClick={() => setDropdownOpen(false)} className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Garlic Powder</Link></li>
+                <li ><Link href="garlic-paste" onClick={() => setDropdownOpen(false)} className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Garlic Paste</Link></li>
               </ul>)}
             </details>
           </li>
           <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold"><Link href="/gallery">Gallery</Link></li>
-          <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold"><Link href="/about">About</Link></li>
+          {/* <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold"><Link href="/about">About</Link></li> */}
           <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold"><Lin to="contactus" spy={true} smooth={true} duration={500} >Contact Us</Lin></li>
         </ul>
       </div>

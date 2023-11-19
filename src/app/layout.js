@@ -3,6 +3,9 @@ import './globals.css'
 import Navbar from '@/components/base/navbar'
 import Footer from '@/components/base/footer/footer.jsx'
 import ContactUs from '@/components/base/contactUs/contactUs'
+import UpComingEvent from '@/components/base/upComingEvent'
+import ContactPopUpBtn from '@/components/base/contactPopUpBtn'
+import ShowEvent from '@/components/base/showEvent'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,12 +17,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} scrollbar`}>
+        <ShowEvent />
+        <ContactPopUpBtn />
+        <UpComingEvent />
         <Navbar />
         {children}
         <ContactUs />
         <Footer />
-        </body>
+      </body>
     </html>
   )
 }

@@ -4,13 +4,15 @@ export default function Categories() {
   const content = [
     ['#EC6839', 'Garlic Bulb', "Building Bricks are rectangular blocks of baked clay used to form parts of buildings, typically walls. which are usually red or brown in color.", '/garlic-clove', '/images/cat1.jpeg'],
     ['#9BD3C4', 'Garlic Clove', "Brick slips are specially manufactured tiles from facing bricks,when they are installed, they have the appearance, color and texture of a real clay brick wall.", '/garlic-bulb', '/images/cat2.jpeg'],
-    ['#F2A644', 'Peeled, Powder & Paste', "Clay Tiles are usually thin, square or rectangular in shape, manufactured from baked clay, they are generally used to cover roofs and floors.", '/peeled-powder-paste', '/images/cat3.jpg'],
+    ['#F2A644', 'Garlic Peeled', "Clay Tiles are usually thin, square or rectangular in shape, manufactured from baked clay, they are generally used to cover roofs and floors.", '/garlic-peeled', '/images/cat3.jpg'],
+    ['#EC6839', 'Garlic Powder', "Clay Tiles are usually thin, square or rectangular in shape, manufactured from baked clay, they are generally used to cover roofs and floors.", '/garlic-powder', '/images/cat2.jpeg'],
+    ['#9BD3C4', 'Garlic Paste', "Clay Tiles are usually thin, square or rectangular in shape, manufactured from baked clay, they are generally used to cover roofs and floors.", '/garlic-paste', '/images/cat1.jpeg'],
   ]
   return (
     <div className='max-w-screen relative bg-themeColor font-text z-20 py-4'>
       <div className=" text-white flex flex-wrap items-center justify-center w-11/12 mx-auto p-5 min-h-max">
         {content.map((item, index) => (
-          <div className="md:w-1/3 md:mb-5 xl:mb-0 -translate-y-1/3 w-4/5 xl:w-1/3 group lg:hover:-translate-y-1/2 min-h-fit transition duration-200 ease-in-out" key={index}>
+          <div className="md:w-1/3 md:mb-5 xl:mb-0 -translate-y-1/3 w-4/5 xl:w-1/5 group lg:hover:-translate-y-1/2 min-h-fit transition duration-200 ease-in-out" key={index}>
             <div style={{'backgroundImage': `url(${item[4]})`}} className="bg-cover min-h-fit">
               <Link href= {item[3]}>
                 <div className="transparent border-t-8 px-3 pb-1 bg-gray-800/[0.7] hover:cursor-pointer group-hover:bg-transparent group-hover:bg-gradient-to-b from-transparent via-gray-800/[0.3] to-gray-800/[0.7]" style={{ borderColor: item[0] }}>
