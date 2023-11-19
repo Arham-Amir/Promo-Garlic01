@@ -22,7 +22,7 @@ const Faqs = () => {
     setActiveIndex(activeIndex === index ? null : index);
   };
   return (
-    <section className='w-screen h-auto p-5 flex flex-col gap-8 justify-center items-center'>
+    <section className='w-full h-auto p-5 flex flex-col gap-8 justify-center items-center'>
       <h1>FAQS</h1>
       <div className="join join-vertical w-4/5">
         {faqArray.map((e, i) => (

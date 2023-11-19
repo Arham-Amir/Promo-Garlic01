@@ -2,9 +2,9 @@ import Link from 'next/link'
 import { IoIosArrowForward } from 'react-icons/io'
 export default function Categories() {
   const content = [
-    ['#EC6839', 'Garlic Bulb', "Building Bricks are rectangular blocks of baked clay used to form parts of buildings, typically walls. which are usually red or brown in color.", '/page2', '/images/cat1.jpeg'],
-    ['#9BD3C4', 'Garlic Clove', "Brick slips are specially manufactured tiles from facing bricks,when they are installed, they have the appearance, color and texture of a real clay brick wall.", '/page4', '/images/cat2.jpeg'],
-    ['#F2A644', 'Peeled, Powder & Paste', "Clay Tiles are usually thin, square or rectangular in shape, manufactured from baked clay, they are generally used to cover roofs and floors.", '/page5', '/images/cat3.jpg'],
+    ['#EC6839', 'Garlic Bulb', "Building Bricks are rectangular blocks of baked clay used to form parts of buildings, typically walls. which are usually red or brown in color.", '/garlic-clove', '/images/cat1.jpeg'],
+    ['#9BD3C4', 'Garlic Clove', "Brick slips are specially manufactured tiles from facing bricks,when they are installed, they have the appearance, color and texture of a real clay brick wall.", '/garlic-bulb', '/images/cat2.jpeg'],
+    ['#F2A644', 'Peeled, Powder & Paste', "Clay Tiles are usually thin, square or rectangular in shape, manufactured from baked clay, they are generally used to cover roofs and floors.", '/peeled-powder-paste', '/images/cat3.jpg'],
   ]
   return (
     <div className='max-w-screen relative bg-themeColor font-text z-20 py-4'>

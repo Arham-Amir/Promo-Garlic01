@@ -11,7 +11,7 @@ import ContactInfo from './contactInfo'
 const ContactUs = () => {
   return (
     <section id='contactus' className='h-auto py-10 bg-bg'>
-      <h1 className='text-black flex justify-center mb-4 font-heading'>Contact Us</h1>
+      <h1 className='flex justify-center mb-4 font-heading'>Contact Us</h1>
       <section className='w-5/6 mx-auto py-5
       flex flex-col gap-x-4 md:flex-row md:gap-0'>
         <ContactLeft className='md:basis-3/5' />

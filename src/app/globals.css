@@ -2,20 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities{
-  .hero{
-    @apply  bg-cover;
-    background-image: linear-gradient( 180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(/images/hero.jpeg);
+@layer utilities {
+  .hero {
+    @apply bg-cover;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/hero.jpeg);
   }
+
 }
-@layer base{
-  h1{
+
+@layer base {
+  h1 {
     @apply text-2xl md:text-3xl lg:text-5xl font-bold;
   }
-  h3{
+
+  h2 {
+    @apply text-xl md:text-2xl lg:text-4xl font-semibold;
+  }
+
+  h3 {
     @apply text-base md:text-xl lg:text-2xl font-semibold;
   }
-  p{
-    @apply text-xs md:text-sm lg:text-base ;
+
+  p {
+    @apply text-xs md:text-sm lg:text-base;
   }
 }

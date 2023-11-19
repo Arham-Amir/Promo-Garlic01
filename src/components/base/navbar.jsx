@@ -28,21 +28,19 @@ const Navbar = () => {
           </label>
           <ul tabIndex={0} onClick={() => setIsDropdownOpen(false)}
             className={`z-30 menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 ${isDropdownOpen ? 'block' : 'hidden'} right-0`}>
-            <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor">
+            <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">
               <Link href="/">Home</Link></li>
             <li >
-              <a className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor">Products</a>
+              <a className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Products</a>
               <ul className="p-2 z-30">
-                <li><Link href="/page2" className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor">Buildings Bricks</Link></li>
-                <li><Link href="/page3" className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor">Facing Bricks</Link></li>
-                <li><Link href="/page4" className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor">Brick Slips</Link></li>
-                <li><Link href="/page5" className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor">Clay Tiles</Link></li>
-                <li><Link href="/page6" className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor">Pots</Link></li>
+                <li><Link href="/garlic-clove" className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Garlic Clove</Link></li>
+                <li><Link href="/garlic-bulb" className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Garlic Bulb</Link></li>
+                <li><Link href="/peeled-powder-paste" className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Peeled, Powder & Paste</Link></li>
               </ul>
             </li>
-            <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor"><Link href="/gallery">Gallery</Link></li>
-            <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor"><Link href="/about">About</Link></li>
-            <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor"><Lin to="contactus" spy={true} smooth={true} duration={500} >Contact Us</Lin></li>
+            <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold"><Link href="/gallery">Gallery</Link></li>
+            <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold"><Link href="/about">About</Link></li>
+            <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold"><Lin to="contactus" spy={true} smooth={true} duration={500} >Contact Us</Lin></li>
             <li><a href="https://www.promodevelopers.com" target="blank" className="py-3 text-white flex items-center justify-center h-fit bg-themeColor rounded-3xl">Book Now</a></li>
           </ul>
         </div>
@@ -52,22 +50,20 @@ const Navbar = () => {
       </div>
       <div className="navbar-center hidden md:flex">
         <ul className="menu menu-horizontal px-1">
-          <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor"><Link href="/">Home</Link></li>
+          <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold"><Link href="/">Home</Link></li>
           <li tabIndex={0} className="">
             <details {...(dropdownOpen == false ? { open: true } : {})}>
-              <summary onClick={() => setDropdownOpen(!dropdownOpen)} className="cursor-pointer  hover:scale-110 transition duration-100 hover:text-themeColor">Products</summary>
+              <summary onClick={() => setDropdownOpen(!dropdownOpen)} className="cursor-pointer  hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Products</summary>
               {dropdownOpen && (<ul className="p-2 z-30 min-w-max">
-                <li ><Link href="/page2" onClick={() => setDropdownOpen(false)} className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor">Buildings Bricks</Link></li>
-                <li ><Link href="/page3" onClick={() => setDropdownOpen(false)} className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor">Facing Bricks</Link></li>
-                <li ><Link href="/page5" onClick={() => setDropdownOpen(false)} className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor">Clay Tiles</Link></li>
-                <li ><Link href="/page4" onClick={() => setDropdownOpen(false)} className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor">Brick Slips</Link></li>
-                <li ><Link href="/page6" onClick={() => setDropdownOpen(false)} className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor">Pots</Link></li>
+                <li ><Link href="/garlic-clove" onClick={() => setDropdownOpen(false)} className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Garlic Clove</Link></li>
+                <li ><Link href="/garlic-bulb" onClick={() => setDropdownOpen(false)} className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Garlic Bulb</Link></li>
+                <li ><Link href="/peeled-powder-paste" onClick={() => setDropdownOpen(false)} className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Peeled, Powder & Paste</Link></li>
               </ul>)}
             </details>
           </li>
-          <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor"><Link href="/gallery">Gallery</Link></li>
-          <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor"><Link href="/about">About</Link></li>
-          <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor"><Lin to="contactus" spy={true} smooth={true} duration={500} >Contact Us</Lin></li>
+          <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold"><Link href="/gallery">Gallery</Link></li>
+          <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold"><Link href="/about">About</Link></li>
+          <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold"><Lin to="contactus" spy={true} smooth={true} duration={500} >Contact Us</Lin></li>
         </ul>
       </div>
       <div className="hidden md:flex navbar-end">
