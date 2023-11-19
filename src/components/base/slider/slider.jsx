@@ -37,7 +37,7 @@ export default function Slider({data}) {
       className="mySwiper"
     >
       {data.map((e, i) => (
-        <SwiperSlide key={i} ><LazyImage className="h-[250px] lg:h-[300px] w-full object-cover border-4 border-gray-300" src={e} /></SwiperSlide>
+        <SwiperSlide key={i} ><LazyImage className="h-[250px]  w-full object-cover object-center border-4 border-gray-300" src={e} /></SwiperSlide>
       ))}
     </Swiper>
   );

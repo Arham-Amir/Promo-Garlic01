@@ -45,7 +45,7 @@ const Navbar = () => {
           </ul>
         </div>
         <Link href="/" className="btn btn-ghost normal-case text-xl">
-        <LazyImage className="h-full w-fit object-contain mr-1" src="/logos/promogarlic.gif"/>
+        <LazyImage className="h-full w-fit object-contain mr-1" src="/images/nav_logo.gif"/>
         Promo Garlic</Link>
       </div>
       <div className="navbar-center hidden md:flex">
