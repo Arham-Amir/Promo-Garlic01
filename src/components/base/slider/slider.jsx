@@ -34,7 +34,7 @@ export default function Slider({data}) {
           spaceBetween: 30,
         },
       }}
-      className="mySwiper"
+      className={`mySwiper`}
     >
       {data.map((e, i) => (
         <SwiperSlide key={i} ><LazyImage className="h-[250px] w-full object-fill border-4 border-gray-300" src={e} /></SwiperSlide>

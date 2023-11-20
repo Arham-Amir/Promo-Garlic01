@@ -4,6 +4,7 @@ import Intro from '@/components/base/intro/intro';
 const ChildComp = () => {
   const data = {
     "name": "Garlic Powder",
+    "bg": "/powder/3.jpg",
     "description": [
       "A fine powder known as garlic powder is created by drying and grinding garlic cloves. The medical benefits of garlic have been recognized for a very long time, and its distinctive, pungent flavor is well-known. All the advantages of fresh garlic are there in garlic powder, but it is easier to use and won't give you foul breath.",
       "Any meal can benefit from the flavor of garlic when using garlic powder. In most recipes, it can be used in place of fresh garlic. Another practical method for obtaining the advantages of garlic without the overpowering smell is garlic powder.",

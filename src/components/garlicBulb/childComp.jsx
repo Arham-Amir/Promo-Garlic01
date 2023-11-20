@@ -4,6 +4,7 @@ import Intro from '@/components/base/intro/intro';
 const ChildComp = () => {
   const data = {
     "name": "Garlic Bulb",
+    "bg": "/bulb/1.jpeg",
     "description": [
       "Garlic is often sold as a whole bulb, covered with papery white skin. A garlic bulb, also known as a head of garlic, is made up of individual lobes that are attached to the main root. A clove of garlic is one of those individual lobes.",
     ],

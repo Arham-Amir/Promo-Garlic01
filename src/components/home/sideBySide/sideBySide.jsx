@@ -17,7 +17,7 @@ export default SideBySide;
 function Left(params) {
   return (
     <section className='w-full px-6 md:px-0 md:w-[50%] h-[300px] md:h-screen'>
-      <LazyImage className="h-full w-full object-cover" src="/images/cat2.jpeg" />
+      <LazyImage className="h-full w-full object-cover" src="/images/sys.jpeg" />
     </section>
   )
 }

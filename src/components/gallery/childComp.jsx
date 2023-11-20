@@ -57,6 +57,11 @@ const ChildComp = () => {
     "/powder/8.jpg",
     "/powder/9.jpg",
   ]
+  const paste = [
+    "/paste/1.png",
+    "/paste/2.png",
+    "/paste/3.png",
+  ]
 
   return (
     <section >
@@ -69,22 +74,28 @@ const ChildComp = () => {
           </section>
         </section>
         <section className='w-full flex flex-col items-center gap-10'>
-        <h1 className='w-4/5 border text-center mt-5 p-5 mx-auto font-heading'>Garlic Bulb</h1>
+          <h1 className='w-4/5 border text-center mt-5 p-5 mx-auto font-heading'>Garlic Bulb</h1>
           <section className='w-11/12 px-5'>
             <Slider data={bulb} />
           </section>
         </section>
         <section className='w-full flex flex-col items-center gap-10'>
-        <h1 className='w-4/5 border text-center mt-5 p-5 mx-auto font-heading'>Garlic Peeled</h1>
+          <h1 className='w-4/5 border text-center mt-5 p-5 mx-auto font-heading'>Garlic Peeled</h1>
           <section className='w-11/12 px-5'>
             <Slider data={peeled} />
           </section>
         </section>
         <section className='w-full flex flex-col items-center gap-10'>
-        <h1 className='w-4/5 border text-center mt-5 p-5 mx-auto font-heading'>Garlic Powder</h1>
+          <h1 className='w-4/5 border text-center mt-5 p-5 mx-auto font-heading'>Garlic Powder</h1>
           <section className='w-11/12 px-5'>
             <Slider data={powder} />
           </section>
+        </section>
+      </section>
+      <section className='w-full flex flex-col items-center gap-10'>
+        <h1 className='w-4/5 border text-center mt-5 p-5 mx-auto font-heading'>Garlic Paste</h1>
+        <section className='w-11/12 px-5'>
+          <Slider data={paste} />
         </section>
       </section>
     </section>
