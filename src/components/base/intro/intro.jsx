@@ -11,8 +11,9 @@ const Intro = ({ data }) => {
 
   return (
     <section className='flex flex-col gap-10 justify-center items-center py-5'>
-      <section style={{'backgroundImage': `url(${data["bg"]})`}} className={`min-h-[35vh] md:min-h-[50vh] relative py-14 bg-cover bg-center text-white flex flex-col items-center justify-center gap-5`}>
-        <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
+      <section style={{'backgroundImage': `url(${data["bg"]})`}} className={`relative min-h-[35vh] md:min-h-[50vh] py-14 bg-cover bg-center text-white flex flex-col items-center justify-center gap-5`}>
+        <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50">
+        </div>
         <h1 className='z-10'>{data["name"]}</h1>
         {data["description"].map((e, i) => (
           <p key={i} className='text-center w-[80%] md:w-[60%] z-10'>

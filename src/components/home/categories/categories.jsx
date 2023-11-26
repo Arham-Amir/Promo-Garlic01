@@ -13,7 +13,7 @@ export default function Categories() {
       <div className="text-white flex flex-wrap xl:flex-nowrap gap-16 xl:gap-3 items-center justify-center w-11/12 mx-auto p-5 min-h-max">
         {content.map((item, index) => (
           <div className="md:mb-5 xl:mb-0 -translate-y-1/3 w-4/5 md:w-1/3 xl:w-1/5 min-h-fit"  key={index}>
-            <div style={{ borderColor: item[0] }} className={`bg-themeColor border-2 min-h-fit p-4 rounded-2xl shadow-lg hover:scale-105 transition-all duration-150`}>
+            <div style={{ borderColor: item[0] }} className={`bg-themeColor border-2 min-h-fit p-4 rounded-2xl shadow-lg md:hover:scale-105 transition-all duration-150`}>
               <Link className='flex flex-col gap-1 items-center' href={item[3]}>
                 <Image style={{ borderColor: item[0] }} loading='lazy' width={1000} height={1000} className="object-fill object-center w-full h-[150px] scale-y-125 rounded-2xl -translate-y-1/3 drop-shadow-2xl border-2" src={item[4]}/>
                 <h3 style={{ borderColor: item[0] }} className='border-b-2 w-fit text-center font-heading tracking-wider'>{item[1]}</h3>

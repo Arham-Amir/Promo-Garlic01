@@ -57,8 +57,8 @@ const Navbar = () => {
             <details {...(dropdownOpen == false ? { open: true } : {})}>
               <summary onClick={() => setDropdownOpen(!dropdownOpen)} className="cursor-pointer  hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Products</summary>
               {dropdownOpen && (<ul className="p-2 z-30 min-w-max">
-                <li ><Link href="/garlic-clove" onClick={() => setDropdownOpen(false)} className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Garlic Clove</Link></li>
                 <li ><Link href="/garlic-bulb" onClick={() => setDropdownOpen(false)} className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Garlic Bulb</Link></li>
+                <li ><Link href="/garlic-clove" onClick={() => setDropdownOpen(false)} className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Garlic Clove</Link></li>
                 <li ><Link href="garlic-peeled" onClick={() => setDropdownOpen(false)} className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Garlic Peeled</Link></li>
                 <li ><Link href="garlic-powder" onClick={() => setDropdownOpen(false)} className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Garlic Powder</Link></li>
                 <li ><Link href="garlic-paste" onClick={() => setDropdownOpen(false)} className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Garlic Paste</Link></li>
