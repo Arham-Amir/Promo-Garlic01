@@ -43,7 +43,7 @@ const Navbar = () => {
             <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold"><Link href="/gallery">Gallery</Link></li>
             {/* <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold"><Link href="/about">About</Link></li> */}
             <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold"><Lin to="contactus" spy={true} smooth={true} duration={500} >Contact Us</Lin></li>
-            <li><a href="https://www.promodevelopers.com" target="blank" className="py-3 text-white flex items-center justify-center h-fit bg-themeColor rounded-3xl">Book Now</a></li>
+            <li><a href="https://wa.me/+923004439445" target="blank" className="py-3 text-white flex items-center justify-center h-fit bg-themeColor rounded-3xl">Book Now</a></li>
           </ul>
         </div>
         <Link href="/" className="btn btn-ghost normal-case text-xl">
@@ -71,7 +71,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="hidden md:flex navbar-end">
-        <a href="https://www.promodevelopers.com" target="blank" className="btn text-white bg-themeColor rounded-3xl">Book Now</a>
+        <a href="https://wa.me/+923004439445" target="blank" className="btn text-white bg-themeColor rounded-3xl">Book Now</a>
       </div>
     </div>
   );
