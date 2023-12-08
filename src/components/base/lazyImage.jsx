@@ -18,7 +18,7 @@ const LazyImage = ({ src, className }) => {
             ? 'scale-110 blur-sm grayscale'
             : 'scale-100 blur-0 grayscale-0'}
         `}
-        onLoadingComplete={() => setLoading(false)}
+        onLoad={() => setLoading(false)}
       />
     </>
   );
