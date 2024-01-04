@@ -36,7 +36,6 @@ const ChildComp = () => {
     "/peeled/1.jpg",
     "/peeled/2.jpg",
     "/peeled/3.jpg",
-    "/peeled/4.jpg",
     "/peeled/5.jpg",
     "/peeled/6.jpg",
     "/peeled/7.jpg",

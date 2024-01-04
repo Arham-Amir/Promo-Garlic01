@@ -4,18 +4,14 @@ import React, { useState } from 'react';
 const Faqs = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const faqArray = [
-    ["Can I visit your Farm or Seed Storage facility before purchasing seed?", "Yes you can visit our farms and storage facility any time before purchasing our seed."],
-    ["How can I locate your farm or storage facility?", "You can contact our team on given phone numbers and our representative will guide you to our farm location."],
-    ["Do you offer Consultancy service?", "Yes, you can consult with our experts any time."],
-    ["Do you charge for Consultancy Service?", "No, we do not charge any fee for consultancy service."],
-    ["How can I calculate the estimated price of G1 Seed?", "You can calculate the price on our Seed price calculator [Link]. You can calculate price by both land or weight."],
-    ["Do you offer any discount?", "Yes we do offer discounts to our customers. You can find the details on our price calculator."],
-    ["Do I have to make an advance payment to confirm my pre-order?", "Yes, you will have to make an advance 25% payment of the total amount to confirm your order."],
-    ["What is The Price of G1 Garlic in Pakistan 2023?", "The price of G1 garlic in Pakistan in 2023 may vary depending on the market conditions and the supplier’s pricing strategy. However, SeedsPk is proud to offer genuine and authorized fresh G1 garlic seed at a competitive price."],
-    ["Is G1 Garlic Seed Available in Pakistan?", "Yes, G1 garlic seed is available in Pakistan. However, it’s important to ensure that you are getting genuine and authentic seed to achieve the best results. At SeedsPk, we offer high-quality G1 garlic seed. To learn more, please visit our website or contact us directly."],
-    ["How Much G1 Garlic Seed Per acre?", "For G1 garlic seed, a general guideline is to plant 800 kilograms or 20 Mun fresh seed per acre. This is the recommended amount to ensure adequate seed coverage and optimal yield for your garlic crop. Please contact us to discuss your requirements and how we can help you achieve your desired results."],
-    ["What is the Price of G1 Garlic Seed in Pakistan 2022 today?", "The latest price range of G1 garlic seed in Pakistan in 2022 is around 1800 to 2000 per KG for fresh garlic seeds on advance booking. However, it’s important to note that prices may vary depending on factors such as market demand and supply availability."],
-    ["What is the Price of G1 Garlic Seed per KG?", "The price can vary depending on the demand and supply of garlic seeds."]
+    ["Can I visit your Farm or Seed Storage facility before purchasing seed?", "Yes, you can visit our farms and storage facility any time before purchasing seed from us."],
+    ["How can I locate your farm or storage facility?", "You can contact us for the exact pin location of our farm."],
+    ["Do you offer Consultancy service?", "Yes, you can consult with us anytime after purchasing seed."],
+    ["Do you charge for Consultancy Service?", "No, we do not charge any fee for consultancy service if you purchase seed from us."],
+    ["Can we do investment with you?", "Yes, you can invest with us. Contact us for further details."],
+    ["Where are farms located?", "They are located in Manga Mandi."],
+    ["Do you have any other products related to Garlic?", "Yes, we do have Garlic Bulb, Garlic Clove, Garlic peeled, Garlic Paste, and Garlic Powder."],
+    ["Do you export these items?", "Yes, we can export these items."],
   ];
 
   const toggleFAQ = (index) => {

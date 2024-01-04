@@ -4,7 +4,7 @@ const Divider2 = () => {
   const data = [
     ["bg-[url('/images/seed.jpg')]", "SEEDS REQUIREMENTS", "800 KG PER ACRE"],
     ["bg-[url('/images/yield.jpg')]", "YIELD PER ACRE", "200-350 MUN"],
-    ["bg-[url('/images/crop.jpeg')]", "CROP DURATION", "6-7 MONTHS"],
+    ["bg-[url('/images/crop.jpg')]", "CROP DURATION", "6-7 MONTHS"],
     ["bg-[url('/images/plantation.jpg')]", "NUMBER PLANTATION", "NUMBER PLANTATION"],
   ]
   return (

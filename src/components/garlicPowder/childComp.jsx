@@ -5,10 +5,10 @@ const ChildComp = () => {
   const data = {
     "name": "Garlic Powder",
     "bg": "/powder/3.jpg",
+    "bg-style":"bg-center",
     "description": [
       "A fine powder known as garlic powder is created by drying and grinding garlic cloves. The medical benefits of garlic have been recognized for a very long time, and its distinctive, pungent flavor is well-known. All the advantages of fresh garlic are there in garlic powder, but it is easier to use and won't give you foul breath.",
       "Any meal can benefit from the flavor of garlic when using garlic powder. In most recipes, it can be used in place of fresh garlic. Another practical method for obtaining the advantages of garlic without the overpowering smell is garlic powder.",
-      "You can substitute 8 fresh garlic cloves for one teaspoon of garlic powder if your recipe calls for it and you don't have any on hand or would prefer to use fresh garlic."
     ],
     "benefits": [
       "Vitamin C, B vitamins, manganese, and selenium are just a few of the vitamins and minerals that are abundant in it. A good source of fiber is garlic.",
@@ -17,6 +17,7 @@ const ChildComp = () => {
       "Garlic powder can also be used as a condiment to add taste to a variety of foods, including pizza, popcorn, soups, meats, and vegetables. It can also be used to enhance the flavor of other foods.",
       "The best way to flavor ground meat: In quickly cooked ground meats like meatballs, burgers, and sausage, chopped garlic will not soften. Instead, sprinkle the ground pork mixture with garlic powder to add flavor.",
       "Ideal for flavoring ground meats: When cooked briefly, like in meatballs, burgers, and sausage, chunks of chopped garlic will not soften.",
+      "You can substitute 8 fresh garlic cloves for one teaspoon of garlic powder if your recipe calls for it and you don't have any on hand or would prefer to use fresh garlic.",
     ],
     "uses": ["Use Of Garlic Powder", [
       "You can use garlic powder in a variety of ways. Soups, stews, sauces, veggies, and meat meals can all benefit from its flavor.",

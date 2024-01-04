@@ -6,6 +6,7 @@ import ContactUs from '@/components/base/contactUs/contactUs'
 import UpComingEvent from '@/components/base/upComingEvent'
 import ContactPopUpBtn from '@/components/base/contactPopUpBtn'
 import ShowEvent from '@/components/base/showEvent'
+import { ToastContainer } from 'react-toastify';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className} scrollbar`}>
+        <ToastContainer></ToastContainer>
         <ShowEvent />
         <ContactPopUpBtn />
         <UpComingEvent />

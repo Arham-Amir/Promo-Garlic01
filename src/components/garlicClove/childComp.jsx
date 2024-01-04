@@ -5,6 +5,7 @@ const ChildComp = () => {
   const data = {
     "name": "Garlic Clove",
     "bg": "/clove/3.jpeg",
+    "bg-style":"bg-center",
     "description": [
       "Remove the outer papery layer, and you'll see that one bulb is made up of many individual lobes that are also covered in papery skin. Each of these lobes is called a clove of garlic.",
       "Fresh garlic is sold in bulbs, this is an entire head of garlic that is covered in a paper like coating. The entire bulb is made up of separate pieces, each with its own paper-like coating. Each of those individual wedges or pieces is a clove of garlic.",

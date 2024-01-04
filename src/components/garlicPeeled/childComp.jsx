@@ -5,6 +5,7 @@ const ChildComp = () => {
   const data = {
     "name": "Garlic Peeled",
     "bg": "/peeled/8.jpg",
+    "bg-style":"bg-bottom",
     "description": [
       "Whether you're preparing pizza, pesto, or pasta, using freshly peeled garlic is always worthwhile. Instead of purchasing the jar of pre-chopped garlic, take the time to separate those strong cloves from their papery coverings. This will drastically improve the flavor of your dish. However, garlic can be difficult to remove from its peels since it is aware of how good it is.",
       "Peeled garlic is a practical and time-saving pre-peeled, ready-to-use product.",
@@ -26,7 +27,6 @@ const ChildComp = () => {
       "/peeled/1.jpg",
       "/peeled/2.jpg",
       "/peeled/3.jpg",
-      "/peeled/4.jpg",
       "/peeled/5.jpg",
       "/peeled/6.jpg",
       "/peeled/7.jpg",

@@ -5,6 +5,7 @@ const ChildComp = () => {
   const data = {
     "name": "Garlic Bulb",
     "bg": "/bulb/1.jpeg",
+    "bg-style":"bg-center",
     "description": [
       "Garlic is often sold as a whole bulb, covered with papery white skin. A garlic bulb, also known as a head of garlic, is made up of individual lobes that are attached to the main root. A clove of garlic is one of those individual lobes.",
     ],
@@ -24,7 +25,7 @@ const ChildComp = () => {
     ],],
     "why": ["Why You'll Love It", [
       "More Flavour",
-      "Incredibly Easy",
+      "Incredibly easy to use",
       "Health benefits",
 
     ],],

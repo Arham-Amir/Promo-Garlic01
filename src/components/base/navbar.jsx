@@ -20,7 +20,7 @@ const Navbar = () => {
   }, [path])
 
   return (
-    <div className="navbar bg-bg h-[12vh] z-30">
+    <div className="navbar bg-bg h-[12vh] z-30 my-auto">
       <div className="navbar-start flex-row-reverse md:flex-row justify-between md:justify-start w-full md:w-1/2">
         <div className="dropdown z-30">
           <label tabIndex={0} className="btn btn-ghost md:hidden" onClick={toggleDropdown}>
@@ -28,34 +28,34 @@ const Navbar = () => {
           </label>
           <ul tabIndex={0} onClick={() => setIsDropdownOpen(false)}
             className={`z-30 menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 ${isDropdownOpen ? 'block' : 'hidden'} right-0`}>
-            <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">
+            <li className={`cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold`}>
               <Link href="/">Home</Link></li>
             <li >
-              <a className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Products</a>
+              <a className={`${path == "/garlic-bulb" || path == "/garlic-clove" || path == "/garlic-peeled" || path == "/garlic-powder" || path == "/garlic-paste" ? 'font-bold text-themeColor' : 'font-normal'} cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold`}>Products</a>
               <ul className="p-2 z-30">
-                <li><Link href="/garlic-clove" className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Garlic Clove</Link></li>
                 <li><Link href="/garlic-bulb" className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Garlic Bulb</Link></li>
+                <li><Link href="/garlic-clove" className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Garlic Clove</Link></li>
                 <li><Link href="/garlic-peeled" className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Garlic Peeled</Link></li>
                 <li><Link href="/garlic-powder" className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Garlic Powder</Link></li>
                 <li><Link href="/garlic-paste" className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Garlic Paste</Link></li>
               </ul>
             </li>
-            <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold"><Link href="/gallery">Gallery</Link></li>
-            {/* <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold"><Link href="/about">About</Link></li> */}
-            <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold"><Lin to="contactus" spy={true} smooth={true} duration={500} >Contact Us</Lin></li>
+            <li className={`${path == '/gallery' ? 'font-bold text-themeColor' : 'font-normal'} cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold`}><Link href="/gallery">Gallery</Link></li>
+            {/* <li className={`${path == '/' ? 'scale-110 font-bold text-themeColor' : 'scale-100 font-normal'} cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold`}><Link href="/about">About</Link></li> */}
+            <li className={`cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold`}><Lin to="contactus" spy={true} smooth={true} duration={500} >Contact Us</Lin></li>
             <li><a href="https://wa.me/+923004439445" target="blank" className="py-3 text-white flex items-center justify-center h-fit bg-themeColor rounded-3xl">Book Now</a></li>
           </ul>
         </div>
         <Link href="/" className="btn btn-ghost normal-case text-xl">
-        <LazyImage className="h-full w-fit object-contain mr-1" src="/images/nav_logo.gif"/>
-        Promo Garlic</Link>
+          <LazyImage className="h-full w-fit object-contain mr-1" src="/images/nav_logo.gif" />
+          Promo Garlic</Link>
       </div>
       <div className="navbar-center hidden md:flex">
         <ul className="menu menu-horizontal px-1">
-          <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold"><Link href="/">Home</Link></li>
+          <li className={`${path == '/' ? 'scale-110 font-bold text-themeColor' : 'scale-100 font-normal'} cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold`}><Link href="/">Home</Link></li>
           <li tabIndex={0} className="">
             <details {...(dropdownOpen == false ? { open: true } : {})}>
-              <summary onClick={() => setDropdownOpen(!dropdownOpen)} className="cursor-pointer  hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Products</summary>
+              <summary className={`${path == "/garlic-bulb" || path == "/garlic-clove" || path == "/garlic-peeled" || path == "/garlic-powder" || path == "/garlic-paste" ? 'scale-110 font-bold text-themeColor' : 'scale-100 font-normal'} cursor-pointer  hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold`} onClick={() => setDropdownOpen(!dropdownOpen)} >Products</summary>
               {dropdownOpen && (<ul className="p-2 z-30 min-w-max">
                 <li ><Link href="/garlic-bulb" onClick={() => setDropdownOpen(false)} className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Garlic Bulb</Link></li>
                 <li ><Link href="/garlic-clove" onClick={() => setDropdownOpen(false)} className="cursor-pointer min-w-fit hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold">Garlic Clove</Link></li>
@@ -65,9 +65,9 @@ const Navbar = () => {
               </ul>)}
             </details>
           </li>
-          <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold"><Link href="/gallery">Gallery</Link></li>
-          {/* <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold"><Link href="/about">About</Link></li> */}
-          <li className="cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold"><Lin to="contactus" spy={true} smooth={true} duration={500} >Contact Us</Lin></li>
+          <li className={`${path == '/gallery' ? 'scale-110 font-bold text-themeColor' : 'scale-100 font-normal'} cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold`}><Link href="/gallery">Gallery</Link></li>
+          {/* <li className={`${path == '/' ? 'scale-110 font-bold text-themeColor' : 'scale-100 font-normal'} cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold`}><Link href="/about">About</Link></li> */}
+          <li className={`cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold`}><Lin to="contactus" spy={true} smooth={true} duration={500} >Contact Us</Lin></li>
         </ul>
       </div>
       <div className="hidden md:flex navbar-end">
