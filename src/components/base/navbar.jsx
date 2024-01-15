@@ -28,7 +28,7 @@ const Navbar = () => {
           </label>
           <ul tabIndex={0} onClick={() => setIsDropdownOpen(false)}
             className={`z-30 menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 ${isDropdownOpen ? 'block' : 'hidden'} right-0`}>
-            <li className={`cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold`}>
+            <li className={`${path == '/' ? 'font-bold text-themeColor' : 'font-normal'} cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold`}>
               <Link href="/">Home</Link></li>
             <li >
               <a className={`${path == "/garlic-bulb" || path == "/garlic-clove" || path == "/garlic-peeled" || path == "/garlic-powder" || path == "/garlic-paste" ? 'font-bold text-themeColor' : 'font-normal'} cursor-pointer hover:scale-110 transition duration-100 hover:text-themeColor hover:font-bold`}>Products</a>

@@ -23,10 +23,6 @@ const ContactUs = () => {
           <h2 className='text-sm w-fit text-center font-semibold  flex flex-col'>Address: <span className='font-normal'>60-J Block, DHA EME Sector, Multan Road, Lahore, Pakistan</span></h2>
         </ContactInfo>
         <ContactInfo>
-          <SiMinutemailer size={54} className='bg-themeColor text-white rounded-full p-3' />
-          <h2 className='text-sm w-fit text-center font-semibold  flex flex-col'>Email: <span className='font-normal'>info@promogarlic.com</span></h2>
-        </ContactInfo>
-        <ContactInfo>
           <FaPhoneAlt size={54} className='bg-themeColor text-white rounded-full p-3' />
           <h2 className='text-sm w-fit text-center font-semibold  flex flex-col'>Telephone: <span className='font-normal'>+92 42 37512219</span></h2>
         </ContactInfo>
@@ -34,7 +30,10 @@ const ContactUs = () => {
           <FaPhoneAlt size={54} className='bg-themeColor text-white rounded-full p-3' />
           <h2 className='text-sm w-fit text-center font-semibold  flex flex-col'>Whatsapp: <span className='font-normal'>+92 300 4439445</span></h2>
         </ContactInfo>
-
+        <ContactInfo>
+          <SiMinutemailer size={54} className='bg-themeColor text-white rounded-full p-3' />
+          <h2 className='text-sm w-fit text-center font-semibold  flex flex-col'>Email: <span className='font-normal'>info@promogarlic.com</span><span className='font-normal'>promogarlic@gmail.com</span></h2>
+        </ContactInfo>
       </section>
     </section>
   );
