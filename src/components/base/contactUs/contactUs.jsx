@@ -24,7 +24,7 @@ const ContactUs = () => {
         </ContactInfo>
         <ContactInfo>
           <FaPhoneAlt size={54} className='bg-themeColor text-white rounded-full p-3' />
-          <h2 className='text-sm w-fit text-center font-semibold  flex flex-col'>Telephone: <span className='font-normal'>+92 42 37512219</span></h2>
+          <h2 className='text-sm w-fit text-center font-semibold  flex flex-col'>Telephone: <span className='font-normal'>+92 42 32176651</span></h2>
         </ContactInfo>
         <ContactInfo>
           <FaPhoneAlt size={54} className='bg-themeColor text-white rounded-full p-3' />
