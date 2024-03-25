@@ -29,9 +29,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.className} scrollbar`}>
         <ToastContainer></ToastContainer>
-        <ShowEvent />
+        {/* <ShowEvent /> */}
         <ContactPopUpBtn />
-        <UpComingEvent />
+        {/* <UpComingEvent /> */}
         <Navbar />
         {children}
         <ContactUs />
