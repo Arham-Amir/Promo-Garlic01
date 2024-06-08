@@ -5,16 +5,12 @@ import Slider from '../base/slider/slider';
 const ChildComp = () => {
   const bulb = [
     "/bulb/1.jpeg",
-    "/bulb/2.jpeg",
-    "/bulb/3.jpeg",
     "/bulb/4.jpeg",
-    "/bulb/5.jpeg",
-    "/bulb/6.jpeg",
-    "/bulb/7.jpeg",
     "/bulb/8.jpeg",
     "/bulb/9.jpeg",
-    "/bulb/10.jpeg",
     "/bulb/11.jpeg",
+    "/bulb/12.jpg",
+    "/bulb/13.jpg",
   ]
   const clove = [
     "/clove/1.jpeg",
